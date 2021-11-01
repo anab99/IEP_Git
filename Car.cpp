@@ -24,7 +24,7 @@ Car& Car::operator=(const Car& masina)
     return *this;
 }
 
-Car&& Car::operator=(Car&& masina)
+Car& Car::operator=(Car&& masina)
 {
     if(masina)
     {

@@ -2,7 +2,7 @@
 #include "Ford.hpp"
 
 
-Ford::Ford(code_(code), weight_(weight), hp_(hp): Car(code_,weight_,hp_)
+Ford::Ford(int code, int weight, float hp, int year): Car(code,weight,hp),year_(year)
 {}
 
 
@@ -11,7 +11,7 @@ Ford::~Ford() {
 
 
 void Ford::afisare(){
-    std::cout<<"\nName:  "<<name;
+    std::cout<<": Ford ";
 }
 
 Ford::Ford(const Ford &masina): Car(masina.code_,masina.weight_,masina.hp_), code_(code), weight_(weight), hp_(hp){

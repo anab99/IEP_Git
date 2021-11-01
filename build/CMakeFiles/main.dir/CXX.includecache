@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ana/IEP_GIT/Car.hpp
+iostream
+-
+
+/home/ana/IEP_GIT/Ford.cpp
+Ford.hpp
+/home/ana/IEP_GIT/Ford.hpp
+
+/home/ana/IEP_GIT/Ford.hpp
+iostream
+-
+cstring
+-
+Car.hpp
+/home/ana/IEP_GIT/Car.hpp
+
+/home/ana/IEP_GIT/main.cpp
+iostream
+-
+Car.hpp
+/home/ana/IEP_GIT/Car.hpp
+Ford.hpp
+/home/ana/IEP_GIT/Ford.hpp
+string.h
+/home/ana/IEP_GIT/string.h
+

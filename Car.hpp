@@ -19,4 +19,4 @@ float hp_;
 int weight_;
 
 
-}
+};

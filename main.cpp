@@ -1,16 +1,18 @@
 #include<iostream>
-
-enum BOOL{false,true};
-
+#include "Car.hpp"
+#include "Ford.hpp"
+#include "string.h"
 int main()
 {
-  bool done=false;
+  bool quit=false;
   Car* car;
   int code;
   float hp;
+  int nr;
+  int weight;
   int year;
   while (1)
-  {
+  { 
     std::cout<<"1-Ford 2-VW 3-Hyundai 0-Quit";
     std::cin>>nr;
 
@@ -18,32 +20,35 @@ int main()
     {
 
     case 1:
-    cout<<"please enter the car's code";
-    cin>>code;
-    cout<<"please enter the car's year";
-    cin>>weight;
-    cout<<"please enter the car's horsepower";
-    cin>>hp;
-    car = new Ford(code,weight,hp);
+    std::cout<<"please enter the car's code";
+    std::cin>>code;
+    std::cout<<"please enter the car's weight";
+    std::cin>>weight;
+    std::cout<<"please enter the car's horsepower";
+    std::cin>>hp;
+    std::cout<<"please enter the car's year";
+    std::cin>>year;
+
+    car = new Ford(code,weight,hp,year);
     break;
 
     case 2:
-    cout<<"please enter the car's code";
-    cin>>code;
-    cout<<"please enter the car's year";
-    cin>>weight;
-    cout<<"please enter the car's horsepower";
-    cin>>hp;
+    std::cout<<"please enter the car's code";
+    std::cin>>code;
+    std::cout<<"please enter the car's year";
+    std::cin>>weight;
+    std::cout<<"please enter the car's horsepower";
+    std::cin>>hp;
     car = new VW(code,weight,hp);
     break;
 
     case 3:
-    cout<<"please enter the car's code";
-    cin>>code;
-    cout<<"please enter the car's year";
-    cin>>weight;
-    cout<<"please enter the car's horsepower";
-    cin>>hp;
+    std::cout<<"please enter the car's code";
+    std::cin>>code;
+    std::cout<<"please enter the car's year";
+    std::cin>>weight;
+    std::cout<<"pyearlease enter the car's horsepower";
+    std::cin>>hp;
     car = new Hyundai(code,weight,hp);
     break;
 
@@ -53,7 +58,7 @@ int main()
     }
     if (quit)
     break;
-    cout<<endl;
+    std::cout<<std::endl;
 
 
   }
