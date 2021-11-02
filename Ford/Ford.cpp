@@ -12,7 +12,12 @@ Ford::~Ford() {
 
 
 void Ford::afisare(){
-    std::cout<<": Ford ";
+    std::cout<<": Ford "<<std::endl;
+    std::cout<<": Code: "<<code_<<std::endl;
+    std::cout<<": Weight: "<<weight_<<std::endl;
+    std::cout<<": Horsepower: "<<hp_<<std::endl;
+    std::cout<<": Year: "<<year_<<std::endl;
+
 }
 
 Ford::Ford(const Ford &masina): Car(masina),year_(masina.year_){

@@ -11,7 +11,12 @@ VW::~VW() {
 
 
 void VW::afisare(){
-    std::cout<<": VW ";
+    std::cout<<": VW "<<std::endl;
+    std::cout<<": Code: "<<code_<<std::endl;
+    std::cout<<": Weight: "<<weight_<<std::endl;
+    std::cout<<": Horsepower: "<<hp_<<std::endl;
+    std::cout<<": Number of doors: "<<number_doors_<<std::endl;
+
 }
 
 VW::VW(const VW &masina): Car(masina),number_doors_(masina.number_doors_){

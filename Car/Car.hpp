@@ -7,7 +7,7 @@ class Car{
 public: 
 Car() = delete;
 Car(int code, int weight, float hp);
-virtual ~Car();
+virtual ~Car()=default;
 Car(const Car& masina);
 Car(Car&& masina);
 Car& operator=(const Car& masina);

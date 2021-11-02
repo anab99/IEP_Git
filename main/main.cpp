@@ -2,7 +2,6 @@
 #include "Ford.hpp"
 #include "VW.hpp"
 #include "Hyundai.hpp"
-#include "Car.hpp"
 #include "string.h"
 int main()
 {
@@ -17,47 +16,50 @@ int main()
   int number_colors;
   while (1)
   { 
-    std::cout<<"1-Ford 2-VW 3-Hyundai 0-Quit";
+    std::cout<<"1-Ford 2-VW 3-Hyundai 0-Quit   ";
     std::cin>>nr;
 
     switch(nr)
     {
 
     case 1:
-    std::cout<<"please enter the car's code";
+    std::cout<<"please enter the car's code  ";
     std::cin>>code;
-    std::cout<<"please enter the car's weight";
+    std::cout<<"please enter the car's weight  ";
     std::cin>>weight;
-    std::cout<<"please enter the car's horsepower";
+    std::cout<<"please enter the car's horsepower  ";
     std::cin>>hp;
-    std::cout<<"please enter the car's year";
+    std::cout<<"please enter the car's year  ";
     std::cin>>year;
 
     car = new Ford(code,weight,hp,year);
+    car->afisare();
     break;
 
     case 2:
-    std::cout<<"please enter the car's code";
+    std::cout<<"please enter the car's code  ";
     std::cin>>code;
-    std::cout<<"please enter the car's weight";
+    std::cout<<"please enter the car's weight  ";
     std::cin>>weight;
-    std::cout<<"please enter the car's horsepower";
+    std::cout<<"please enter the car's horsepower  ";
     std::cin>>hp;
-    std::cout<<"please enter the car's number of doors";
+    std::cout<<"please enter the car's number of doors"  ;
     std::cin>>hp;
     car = new VW(code,weight,hp,number_doors);
+    car->afisare();
     break;
 
     case 3:
-    std::cout<<"please enter the car's code";
+    std::cout<<"please enter the car's code  ";
     std::cin>>code;
-    std::cout<<"please enter the car's weight";
+    std::cout<<"please enter the car's weight  ";
     std::cin>>weight;
-    std::cout<<"pyearlease enter the car's horsepower";
+    std::cout<<"please enter the car's horsepower  ";
     std::cin>>hp;
-    std::cout<<"please enter the car's number of colors";
+    std::cout<<"please enter the car's number of colors  ";
     std::cin>>hp;
     car = new Hyundai(code,weight,hp,number_colors);
+    car->afisare();
     break;
 
     default: quit=true;
