@@ -57,90 +57,35 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
-CMakeFiles/main.dir/main.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ana/IEP_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cpp.o -c /home/ana/IEP_GIT/main.cpp
+CMakeFiles/main.dir/main/main.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/main/main.cpp.o: ../main/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ana/IEP_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main/main.cpp.o -c /home/ana/IEP_GIT/main/main.cpp
 
-CMakeFiles/main.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ana/IEP_GIT/main.cpp > CMakeFiles/main.dir/main.cpp.i
+CMakeFiles/main.dir/main/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/main/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ana/IEP_GIT/main/main.cpp > CMakeFiles/main.dir/main/main.cpp.i
 
-CMakeFiles/main.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ana/IEP_GIT/main.cpp -o CMakeFiles/main.dir/main.cpp.s
-
-CMakeFiles/main.dir/Car.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/Car.cpp.o: ../Car.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ana/IEP_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/Car.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/Car.cpp.o -c /home/ana/IEP_GIT/Car.cpp
-
-CMakeFiles/main.dir/Car.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/Car.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ana/IEP_GIT/Car.cpp > CMakeFiles/main.dir/Car.cpp.i
-
-CMakeFiles/main.dir/Car.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Car.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ana/IEP_GIT/Car.cpp -o CMakeFiles/main.dir/Car.cpp.s
-
-CMakeFiles/main.dir/Ford.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/Ford.cpp.o: ../Ford.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ana/IEP_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/Ford.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/Ford.cpp.o -c /home/ana/IEP_GIT/Ford.cpp
-
-CMakeFiles/main.dir/Ford.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/Ford.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ana/IEP_GIT/Ford.cpp > CMakeFiles/main.dir/Ford.cpp.i
-
-CMakeFiles/main.dir/Ford.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Ford.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ana/IEP_GIT/Ford.cpp -o CMakeFiles/main.dir/Ford.cpp.s
-
-CMakeFiles/main.dir/Hyundai.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/Hyundai.cpp.o: ../Hyundai.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ana/IEP_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/Hyundai.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/Hyundai.cpp.o -c /home/ana/IEP_GIT/Hyundai.cpp
-
-CMakeFiles/main.dir/Hyundai.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/Hyundai.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ana/IEP_GIT/Hyundai.cpp > CMakeFiles/main.dir/Hyundai.cpp.i
-
-CMakeFiles/main.dir/Hyundai.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Hyundai.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ana/IEP_GIT/Hyundai.cpp -o CMakeFiles/main.dir/Hyundai.cpp.s
-
-CMakeFiles/main.dir/VW.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/VW.cpp.o: ../VW.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ana/IEP_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/VW.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/VW.cpp.o -c /home/ana/IEP_GIT/VW.cpp
-
-CMakeFiles/main.dir/VW.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/VW.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ana/IEP_GIT/VW.cpp > CMakeFiles/main.dir/VW.cpp.i
-
-CMakeFiles/main.dir/VW.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/VW.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ana/IEP_GIT/VW.cpp -o CMakeFiles/main.dir/VW.cpp.s
+CMakeFiles/main.dir/main/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ana/IEP_GIT/main/main.cpp -o CMakeFiles/main.dir/main/main.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/main.cpp.o" \
-"CMakeFiles/main.dir/Car.cpp.o" \
-"CMakeFiles/main.dir/Ford.cpp.o" \
-"CMakeFiles/main.dir/Hyundai.cpp.o" \
-"CMakeFiles/main.dir/VW.cpp.o"
+"CMakeFiles/main.dir/main/main.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-main: CMakeFiles/main.dir/main.cpp.o
-main: CMakeFiles/main.dir/Car.cpp.o
-main: CMakeFiles/main.dir/Ford.cpp.o
-main: CMakeFiles/main.dir/Hyundai.cpp.o
-main: CMakeFiles/main.dir/VW.cpp.o
+main: CMakeFiles/main.dir/main/main.cpp.o
 main: CMakeFiles/main.dir/build.make
+main: Car/libCar.a
+main: Ford/libFord.a
+main: Hyundai/libHyundai.a
+main: VW/libVW.a
+main: Car/libCar.a
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ana/IEP_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ana/IEP_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

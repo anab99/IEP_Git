@@ -2,6 +2,7 @@
 #include "Ford.hpp"
 #include "VW.hpp"
 #include "Hyundai.hpp"
+#include "Car.hpp"
 #include "string.h"
 int main()
 {

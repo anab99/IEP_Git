@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ana/IEP_GIT/Car/Car.cpp
+Car.hpp
+/home/ana/IEP_GIT/Car/Car.hpp
+
+/home/ana/IEP_GIT/Car/Car.hpp
+iostream
+-
+

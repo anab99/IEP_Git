@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/Car.cpp.o CMakeFiles/main.dir/Ford.cpp.o CMakeFiles/main.dir/Hyundai.cpp.o CMakeFiles/main.dir/VW.cpp.o  -o main 
+/usr/bin/c++     CMakeFiles/main.dir/main/main.cpp.o  -o main  Car/libCar.a Ford/libFord.a Hyundai/libHyundai.a VW/libVW.a Car/libCar.a 

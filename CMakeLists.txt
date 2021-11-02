@@ -1,9 +1,16 @@
+
 cmake_minimum_required(VERSION 3.16)  # CMake version check
-project(IEP)               # Create project "simple_example"
+project(main)               # Create project "simple_example"
 set(CMAKE_CXX_STANDARD 14)            # Enable c++14 standard
 
-# Add main.cpp file of project root directory as source file
-set(myfiles main.cpp Car.hpp Car.cpp Ford.cpp Ford.hpp Hyundai.hpp Hyundai.cpp VW.hpp VW.cpp)
+add_subdirectory( Hyundai )
+add_subdirectory( Ford )
+add_subdirectory( VW )
+add_subdirectory( Car )
 
-# Add executable target with source files listed in SOURCE_FILES variable
-add_executable(main ${myfiles})
+add_executable( main main/main.cpp)
+
+target_link_libraries(main Car)
+target_link_libraries(main Ford)
+target_link_libraries(main Hyundai)
+target_link_libraries(main VW)

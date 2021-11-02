@@ -123,140 +123,84 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-Car.o: Car.cpp.o
+#=============================================================================
+# Target rules for targets named Hyundai
 
-.PHONY : Car.o
+# Build rule for target.
+Hyundai: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Hyundai
+.PHONY : Hyundai
 
-# target to build an object file
-Car.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Car.cpp.o
-.PHONY : Car.cpp.o
+# fast build rule for target.
+Hyundai/fast:
+	$(MAKE) -f Hyundai/CMakeFiles/Hyundai.dir/build.make Hyundai/CMakeFiles/Hyundai.dir/build
+.PHONY : Hyundai/fast
 
-Car.i: Car.cpp.i
+#=============================================================================
+# Target rules for targets named Ford
 
-.PHONY : Car.i
+# Build rule for target.
+Ford: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Ford
+.PHONY : Ford
 
-# target to preprocess a source file
-Car.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Car.cpp.i
-.PHONY : Car.cpp.i
+# fast build rule for target.
+Ford/fast:
+	$(MAKE) -f Ford/CMakeFiles/Ford.dir/build.make Ford/CMakeFiles/Ford.dir/build
+.PHONY : Ford/fast
 
-Car.s: Car.cpp.s
+#=============================================================================
+# Target rules for targets named VW
 
-.PHONY : Car.s
+# Build rule for target.
+VW: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 VW
+.PHONY : VW
 
-# target to generate assembly for a file
-Car.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Car.cpp.s
-.PHONY : Car.cpp.s
+# fast build rule for target.
+VW/fast:
+	$(MAKE) -f VW/CMakeFiles/VW.dir/build.make VW/CMakeFiles/VW.dir/build
+.PHONY : VW/fast
 
-Ford.o: Ford.cpp.o
+#=============================================================================
+# Target rules for targets named Car
 
-.PHONY : Ford.o
+# Build rule for target.
+Car: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Car
+.PHONY : Car
 
-# target to build an object file
-Ford.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Ford.cpp.o
-.PHONY : Ford.cpp.o
+# fast build rule for target.
+Car/fast:
+	$(MAKE) -f Car/CMakeFiles/Car.dir/build.make Car/CMakeFiles/Car.dir/build
+.PHONY : Car/fast
 
-Ford.i: Ford.cpp.i
+main/main.o: main/main.cpp.o
 
-.PHONY : Ford.i
-
-# target to preprocess a source file
-Ford.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Ford.cpp.i
-.PHONY : Ford.cpp.i
-
-Ford.s: Ford.cpp.s
-
-.PHONY : Ford.s
-
-# target to generate assembly for a file
-Ford.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Ford.cpp.s
-.PHONY : Ford.cpp.s
-
-Hyundai.o: Hyundai.cpp.o
-
-.PHONY : Hyundai.o
+.PHONY : main/main.o
 
 # target to build an object file
-Hyundai.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Hyundai.cpp.o
-.PHONY : Hyundai.cpp.o
+main/main.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main/main.cpp.o
+.PHONY : main/main.cpp.o
 
-Hyundai.i: Hyundai.cpp.i
+main/main.i: main/main.cpp.i
 
-.PHONY : Hyundai.i
-
-# target to preprocess a source file
-Hyundai.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Hyundai.cpp.i
-.PHONY : Hyundai.cpp.i
-
-Hyundai.s: Hyundai.cpp.s
-
-.PHONY : Hyundai.s
-
-# target to generate assembly for a file
-Hyundai.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Hyundai.cpp.s
-.PHONY : Hyundai.cpp.s
-
-VW.o: VW.cpp.o
-
-.PHONY : VW.o
-
-# target to build an object file
-VW.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/VW.cpp.o
-.PHONY : VW.cpp.o
-
-VW.i: VW.cpp.i
-
-.PHONY : VW.i
+.PHONY : main/main.i
 
 # target to preprocess a source file
-VW.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/VW.cpp.i
-.PHONY : VW.cpp.i
+main/main.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main/main.cpp.i
+.PHONY : main/main.cpp.i
 
-VW.s: VW.cpp.s
+main/main.s: main/main.cpp.s
 
-.PHONY : VW.s
-
-# target to generate assembly for a file
-VW.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/VW.cpp.s
-.PHONY : VW.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
+.PHONY : main/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
+main/main.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main/main.cpp.s
+.PHONY : main/main.cpp.s
 
 # Help Target
 help:
@@ -267,21 +211,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main"
-	@echo "... Car.o"
-	@echo "... Car.i"
-	@echo "... Car.s"
-	@echo "... Ford.o"
-	@echo "... Ford.i"
-	@echo "... Ford.s"
-	@echo "... Hyundai.o"
-	@echo "... Hyundai.i"
-	@echo "... Hyundai.s"
-	@echo "... VW.o"
-	@echo "... VW.i"
-	@echo "... VW.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Hyundai"
+	@echo "... Ford"
+	@echo "... VW"
+	@echo "... Car"
+	@echo "... main/main.o"
+	@echo "... main/main.i"
+	@echo "... main/main.s"
 .PHONY : help
 
 

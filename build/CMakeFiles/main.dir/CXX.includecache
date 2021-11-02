@@ -6,55 +6,45 @@
 
 #IncludeRegexTransform: 
 
-/home/ana/IEP_GIT/Car.hpp
+../Car/Car.hpp
 iostream
 -
 
-/home/ana/IEP_GIT/Ford.cpp
-Ford.hpp
-/home/ana/IEP_GIT/Ford.hpp
-
-/home/ana/IEP_GIT/Ford.hpp
+../Ford/Ford.hpp
 iostream
 -
 cstring
 -
 Car.hpp
-/home/ana/IEP_GIT/Car.hpp
+../Ford/Car.hpp
 
-/home/ana/IEP_GIT/Hyundai.cpp
-Hyundai.hpp
-/home/ana/IEP_GIT/Hyundai.hpp
-
-/home/ana/IEP_GIT/Hyundai.hpp
+../Hyundai/Hyundai.hpp
 iostream
 -
 cstring
 -
 Car.hpp
-/home/ana/IEP_GIT/Car.hpp
+../Hyundai/Car.hpp
 
-/home/ana/IEP_GIT/VW.cpp
-VW.hpp
-/home/ana/IEP_GIT/VW.hpp
-
-/home/ana/IEP_GIT/VW.hpp
+../VW/VW.hpp
 iostream
 -
 cstring
 -
 Car.hpp
-/home/ana/IEP_GIT/Car.hpp
+../VW/Car.hpp
 
-/home/ana/IEP_GIT/main.cpp
+/home/ana/IEP_GIT/main/main.cpp
 iostream
 -
 Ford.hpp
-/home/ana/IEP_GIT/Ford.hpp
+/home/ana/IEP_GIT/main/Ford.hpp
 VW.hpp
-/home/ana/IEP_GIT/VW.hpp
+/home/ana/IEP_GIT/main/VW.hpp
 Hyundai.hpp
-/home/ana/IEP_GIT/Hyundai.hpp
+/home/ana/IEP_GIT/main/Hyundai.hpp
+Car.hpp
+/home/ana/IEP_GIT/main/Car.hpp
 string.h
-/home/ana/IEP_GIT/string.h
+/home/ana/IEP_GIT/main/string.h
 
