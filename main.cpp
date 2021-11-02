@@ -1,6 +1,7 @@
 #include<iostream>
-#include "Car.hpp"
 #include "Ford.hpp"
+#include "VW.hpp"
+#include "Hyundai.hpp"
 #include "string.h"
 int main()
 {
@@ -11,6 +12,8 @@ int main()
   int nr;
   int weight;
   int year;
+  int number_doors;
+  int number_colors;
   while (1)
   { 
     std::cout<<"1-Ford 2-VW 3-Hyundai 0-Quit";
@@ -35,21 +38,25 @@ int main()
     case 2:
     std::cout<<"please enter the car's code";
     std::cin>>code;
-    std::cout<<"please enter the car's year";
+    std::cout<<"please enter the car's weight";
     std::cin>>weight;
     std::cout<<"please enter the car's horsepower";
     std::cin>>hp;
-    car = new VW(code,weight,hp);
+    std::cout<<"please enter the car's number of doors";
+    std::cin>>hp;
+    car = new VW(code,weight,hp,number_doors);
     break;
 
     case 3:
     std::cout<<"please enter the car's code";
     std::cin>>code;
-    std::cout<<"please enter the car's year";
+    std::cout<<"please enter the car's weight";
     std::cin>>weight;
     std::cout<<"pyearlease enter the car's horsepower";
     std::cin>>hp;
-    car = new Hyundai(code,weight,hp);
+    std::cout<<"please enter the car's number of colors";
+    std::cin>>hp;
+    car = new Hyundai(code,weight,hp,number_colors);
     break;
 
     default: quit=true;

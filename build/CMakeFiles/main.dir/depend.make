@@ -10,5 +10,7 @@ CMakeFiles/main.dir/Ford.cpp.o: ../Ford.hpp
 
 CMakeFiles/main.dir/main.cpp.o: ../Car.hpp
 CMakeFiles/main.dir/main.cpp.o: ../Ford.hpp
+CMakeFiles/main.dir/main.cpp.o: ../Hyundai.hpp
+CMakeFiles/main.dir/main.cpp.o: ../VW.hpp
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
 
