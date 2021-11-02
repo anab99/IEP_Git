@@ -8,6 +8,14 @@ CMakeFiles/main.dir/Ford.cpp.o: ../Car.hpp
 CMakeFiles/main.dir/Ford.cpp.o: ../Ford.cpp
 CMakeFiles/main.dir/Ford.cpp.o: ../Ford.hpp
 
+CMakeFiles/main.dir/Hyundai.cpp.o: ../Car.hpp
+CMakeFiles/main.dir/Hyundai.cpp.o: ../Hyundai.cpp
+CMakeFiles/main.dir/Hyundai.cpp.o: ../Hyundai.hpp
+
+CMakeFiles/main.dir/VW.cpp.o: ../Car.hpp
+CMakeFiles/main.dir/VW.cpp.o: ../VW.cpp
+CMakeFiles/main.dir/VW.cpp.o: ../VW.hpp
+
 CMakeFiles/main.dir/main.cpp.o: ../Car.hpp
 CMakeFiles/main.dir/main.cpp.o: ../Ford.hpp
 CMakeFiles/main.dir/main.cpp.o: ../Hyundai.hpp

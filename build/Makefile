@@ -177,6 +177,60 @@ Ford.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Ford.cpp.s
 .PHONY : Ford.cpp.s
 
+Hyundai.o: Hyundai.cpp.o
+
+.PHONY : Hyundai.o
+
+# target to build an object file
+Hyundai.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Hyundai.cpp.o
+.PHONY : Hyundai.cpp.o
+
+Hyundai.i: Hyundai.cpp.i
+
+.PHONY : Hyundai.i
+
+# target to preprocess a source file
+Hyundai.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Hyundai.cpp.i
+.PHONY : Hyundai.cpp.i
+
+Hyundai.s: Hyundai.cpp.s
+
+.PHONY : Hyundai.s
+
+# target to generate assembly for a file
+Hyundai.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Hyundai.cpp.s
+.PHONY : Hyundai.cpp.s
+
+VW.o: VW.cpp.o
+
+.PHONY : VW.o
+
+# target to build an object file
+VW.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/VW.cpp.o
+.PHONY : VW.cpp.o
+
+VW.i: VW.cpp.i
+
+.PHONY : VW.i
+
+# target to preprocess a source file
+VW.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/VW.cpp.i
+.PHONY : VW.cpp.i
+
+VW.s: VW.cpp.s
+
+.PHONY : VW.s
+
+# target to generate assembly for a file
+VW.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/VW.cpp.s
+.PHONY : VW.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -219,6 +273,12 @@ help:
 	@echo "... Ford.o"
 	@echo "... Ford.i"
 	@echo "... Ford.s"
+	@echo "... Hyundai.o"
+	@echo "... Hyundai.i"
+	@echo "... Hyundai.s"
+	@echo "... VW.o"
+	@echo "... VW.i"
+	@echo "... VW.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

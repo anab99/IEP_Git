@@ -8,6 +8,14 @@ CMakeFiles/main.dir/Ford.cpp.o
  /home/ana/IEP_GIT/Car.hpp
  /home/ana/IEP_GIT/Ford.cpp
  /home/ana/IEP_GIT/Ford.hpp
+CMakeFiles/main.dir/Hyundai.cpp.o
+ /home/ana/IEP_GIT/Car.hpp
+ /home/ana/IEP_GIT/Hyundai.cpp
+ /home/ana/IEP_GIT/Hyundai.hpp
+CMakeFiles/main.dir/VW.cpp.o
+ /home/ana/IEP_GIT/Car.hpp
+ /home/ana/IEP_GIT/VW.cpp
+ /home/ana/IEP_GIT/VW.hpp
 CMakeFiles/main.dir/main.cpp.o
  /home/ana/IEP_GIT/Car.hpp
  /home/ana/IEP_GIT/Ford.hpp

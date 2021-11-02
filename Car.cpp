@@ -27,7 +27,7 @@ Car& Car::operator=(const Car& masina)
 Car& Car::operator=(Car&& masina)
 {
     if(this!=&masina)
-    {
+    {   (Car&)(*this)=masina;
         code_=masina.code_;
         weight_=masina.weight_;
         hp_=masina.hp_;

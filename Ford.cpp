@@ -15,6 +15,6 @@ void Ford::afisare(){
     std::cout<<": Ford ";
 }
 
-Ford::Ford(const Ford &masina): Car(masina.code_,masina.weight_,masina.hp_){
+Ford::Ford(const Ford &masina): Car(masina),year_(masina.year_){
     std::cout<<"copy constructor";
 }
