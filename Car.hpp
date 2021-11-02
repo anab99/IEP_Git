@@ -1,3 +1,4 @@
+#pragma once
 #include<iostream>
 
 class Car{
@@ -10,7 +11,7 @@ virtual ~Car();
 Car(const Car& masina);
 Car(Car&& masina);
 Car& operator=(const Car& masina);
-Car&& operator=(Car&& masina);
+Car& operator=(Car&& masina);
 virtual void afisare ()=0;
 
 protected:

@@ -14,6 +14,6 @@ void Hyundai::afisare(){
     std::cout<<": Hyundai ";
 }
 
-Hyundai::Hyundai(const Hyundai &masina): Car(masina.code_,masina.weight_,masina.hp_), code_(code), weight_(weight), hp_(hp){
+Hyundai::Hyundai(const Hyundai &masina): Car(masina.code_,masina.weight_,masina.hp_){
     std::cout<<"copy constructor";
 }
