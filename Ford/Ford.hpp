@@ -16,4 +16,9 @@ Ford&& operator=(Ford&& masina);
 void afisare ();
 private:
 int year_;
+
+
+int getYear();
+
+void setYear(const int w); 
 };

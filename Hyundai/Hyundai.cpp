@@ -11,9 +11,23 @@ Hyundai::~Hyundai() {
 
 
 void Hyundai::afisare(){
-    std::cout<<": Hyundai ";
+    std::cout<<": Hyundai "<<std::endl;
+    std::cout<<": Code: "<<code_<<std::endl;
+    std::cout<<": Weight: "<<weight_<<std::endl;
+    std::cout<<": Horsepower: "<<hp_<<std::endl;
+    std::cout<<": Number of colors: "<<number_colors_<<std::endl;
+
 }
 
 Hyundai::Hyundai(const Hyundai &masina): Car(masina),number_colors_(masina.number_colors_){
     std::cout<<"copy constructor";
+}
+int Hyundai::getCol()
+{
+    return number_colors_;}
+
+void Hyundai::setCol(const int w)
+{
+ number_colors_=w;
+
 }

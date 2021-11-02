@@ -34,5 +34,22 @@ Car& Car::operator=(Car&& masina)
         return *this;
     }
     return *this;
+   
 }
+  
+   
+int Car::getCode(){ return code_;}
+float Car::getHP(){ return hp_;}
+int Car::getWeight(){return weight_;}
 
+void Car::setCode(const int w) {
+    code_=w;
+}
+void Car::setHP(const float & h){
+    hp_=h;
+
+}
+void Car::setWeight(const int & s){
+weight_=s;
+
+}

@@ -22,7 +22,7 @@ int main()
     switch(nr)
     {
 
-    case 1:
+    case 1:{
     std::cout<<"please enter the car's code  ";
     std::cin>>code;
     std::cout<<"please enter the car's weight  ";
@@ -31,12 +31,17 @@ int main()
     std::cin>>hp;
     std::cout<<"please enter the car's year  ";
     std::cin>>year;
+    
 
     car = new Ford(code,weight,hp,year);
+    Car* car1= new Ford(code,weight,hp,year);
+    car->setCode(201);
     car->afisare();
+    car1->afisare();
+    }
     break;
 
-    case 2:
+    case 2:{
     std::cout<<"please enter the car's code  ";
     std::cin>>code;
     std::cout<<"please enter the car's weight  ";
@@ -44,12 +49,13 @@ int main()
     std::cout<<"please enter the car's horsepower  ";
     std::cin>>hp;
     std::cout<<"please enter the car's number of doors"  ;
-    std::cin>>hp;
+    std::cin>>number_doors;
     car = new VW(code,weight,hp,number_doors);
     car->afisare();
+    }
     break;
 
-    case 3:
+    case 3:{
     std::cout<<"please enter the car's code  ";
     std::cin>>code;
     std::cout<<"please enter the car's weight  ";
@@ -57,9 +63,10 @@ int main()
     std::cout<<"please enter the car's horsepower  ";
     std::cin>>hp;
     std::cout<<"please enter the car's number of colors  ";
-    std::cin>>hp;
+    std::cin>>number_colors;
     car = new Hyundai(code,weight,hp,number_colors);
     car->afisare();
+    }
     break;
 
     default: quit=true;

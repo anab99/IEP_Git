@@ -22,4 +22,15 @@ void Ford::afisare(){
 
 Ford::Ford(const Ford &masina): Car(masina),year_(masina.year_){
     std::cout<<"copy constructor";
+
+}
+
+int Ford::getYear()
+{
+    return year_;}
+
+void Ford::setYear(const int w)
+{
+ year_=w;
+
 }

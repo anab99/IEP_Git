@@ -16,4 +16,6 @@ VW&& operator=(VW&& masina);
 void afisare ();
 private:
 int number_doors_;
+int getNR();
+void setNR(const int w);
 };
