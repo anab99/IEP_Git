@@ -22,6 +22,14 @@ void VW::afisare(){
 VW::VW(const VW &masina): Car(masina),number_doors_(masina.number_doors_){
     std::cout<<"copy constructor";
 }
+
+VW& VW::operator=(const VW& masina){
+  if(this!=&masina){
+      (Car&)(*this)= masina;
+      number_doors_=masina.number_doors_;
+  }
+  return *this;
+}
 int VW::getNR()
 {
     return number_doors_;}

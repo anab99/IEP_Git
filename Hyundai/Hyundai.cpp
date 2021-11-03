@@ -22,6 +22,14 @@ void Hyundai::afisare(){
 Hyundai::Hyundai(const Hyundai &masina): Car(masina),number_colors_(masina.number_colors_){
     std::cout<<"copy constructor";
 }
+
+Hyundai& Hyundai::operator=(const Hyundai& masina){
+  if(this!=&masina){
+      (Car&)(*this)= masina;
+      number_colors_=masina.number_colors_;
+  }
+  return *this;
+}
 int Hyundai::getCol()
 {
     return number_colors_;}

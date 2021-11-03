@@ -25,6 +25,14 @@ Ford::Ford(const Ford &masina): Car(masina),year_(masina.year_){
 
 }
 
+Ford& Ford::operator=(const Ford& masina){
+  if(this!=&masina){
+      (Car&)(*this)= masina;
+      year_=masina.year_;
+  }
+  return *this;
+}
+
 int Ford::getYear()
 {
     return year_;}
