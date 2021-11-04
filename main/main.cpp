@@ -38,10 +38,9 @@ int main()
     
 
     car = new Ford(code,weight,hp,year);
-    Car* car1= new Ford(code,weight,hp,year);
-    car->setCode(201);
+    
     car->afisare();
-    car1->afisare();
+   
     }
     break;
 
@@ -56,10 +55,8 @@ int main()
     std::cin>>number_doors;
     car = new VW(code,weight,hp,number_doors);
    
-    Car* car1= new VW(code,weight,hp,number_doors);
-    car->setCode(201);
     car->afisare();
-    car1->afisare();
+  
     }
     break;
 
@@ -73,10 +70,9 @@ int main()
     std::cout<<"please enter the car's number of colors  ";
     std::cin>>number_colors;
     car = new Hyundai(code,weight,hp,number_colors);
-    Car* car1= new Hyundai(code,weight,hp,number_colors);
-    car->setCode(201);
+
     car->afisare();
-    car1->afisare();
+  
     }
     break;
 
