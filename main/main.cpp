@@ -20,7 +20,7 @@ int main()
   int number_colors;
   while (1)
   { 
-    std::cout<<"1-Ford 2-VW 3-Hyundai\n 4- Ford copy constructor 5 - VW copy constructor 6 - Hyundai copy constructor \n 7- Ford copy operator 8 - VW copy operator 9 - Hyundai copy operator - 0-Quit   ";
+    std::cout<<"1-Ford 2-VW 3-Hyundai\n4- Ford copy constructor 5 - VW copy constructor 6 - Hyundai copy constructor\n7 - Ford copy operator 8 - VW copy operator 9 - Hyundai copy operator\n 10 BMW (private)- 0-Quit   ";
     std::cin>>nr;
 
     switch(nr)

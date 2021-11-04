@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+../BMW/BMW.hpp
+iostream
+-
+cstring
+-
+Car.hpp
+../BMW/Car.hpp
+
 ../Car/Car.hpp
 iostream
 -
@@ -45,4 +53,6 @@ Hyundai.hpp
 /home/ana/IEP_GIT/main/Hyundai.hpp
 string.h
 /home/ana/IEP_GIT/main/string.h
+BMW.hpp
+/home/ana/IEP_GIT/main/BMW.hpp
 
