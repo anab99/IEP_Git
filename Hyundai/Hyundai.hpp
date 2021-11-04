@@ -12,7 +12,6 @@ virtual ~Hyundai();
 Hyundai(const Hyundai& masina);
 Hyundai(Hyundai&& masina);
 Hyundai& operator=(const Hyundai& masina);
-Hyundai&& operator=(Hyundai&& masina);
 void afisare ();
 private:
 int number_colors_;

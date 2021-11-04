@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "../BMW/CMakeLists.txt"
   "../CMakeLists.txt"
   "../Car/CMakeLists.txt"
   "../Ford/CMakeLists.txt"
@@ -49,6 +50,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Ford/CMakeFiles/CMakeDirectoryInformation.cmake"
   "VW/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Car/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "BMW/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -58,4 +60,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "Ford/CMakeFiles/Ford.dir/DependInfo.cmake"
   "VW/CMakeFiles/VW.dir/DependInfo.cmake"
   "Car/CMakeFiles/Car.dir/DependInfo.cmake"
+  "BMW/CMakeFiles/BMW.dir/DependInfo.cmake"
   )

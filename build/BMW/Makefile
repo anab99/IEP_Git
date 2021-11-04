@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/IEP_GIT/build/CMakeFiles /home/ana/IEP_GIT/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/ana/IEP_GIT/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ana/IEP_GIT/build/CMakeFiles /home/ana/IEP_GIT/build/BMW/CMakeFiles/progress.marks
+	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 BMW/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/IEP_GIT/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 BMW/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,123 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 BMW/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 BMW/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ana/IEP_GIT/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named main
+# Convenience name for target.
+BMW/CMakeFiles/BMW.dir/rule:
+	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 BMW/CMakeFiles/BMW.dir/rule
+.PHONY : BMW/CMakeFiles/BMW.dir/rule
 
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
+# Convenience name for target.
+BMW: BMW/CMakeFiles/BMW.dir/rule
 
-# fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-#=============================================================================
-# Target rules for targets named Hyundai
-
-# Build rule for target.
-Hyundai: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Hyundai
-.PHONY : Hyundai
-
-# fast build rule for target.
-Hyundai/fast:
-	$(MAKE) -f Hyundai/CMakeFiles/Hyundai.dir/build.make Hyundai/CMakeFiles/Hyundai.dir/build
-.PHONY : Hyundai/fast
-
-#=============================================================================
-# Target rules for targets named Ford
-
-# Build rule for target.
-Ford: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Ford
-.PHONY : Ford
-
-# fast build rule for target.
-Ford/fast:
-	$(MAKE) -f Ford/CMakeFiles/Ford.dir/build.make Ford/CMakeFiles/Ford.dir/build
-.PHONY : Ford/fast
-
-#=============================================================================
-# Target rules for targets named VW
-
-# Build rule for target.
-VW: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 VW
-.PHONY : VW
-
-# fast build rule for target.
-VW/fast:
-	$(MAKE) -f VW/CMakeFiles/VW.dir/build.make VW/CMakeFiles/VW.dir/build
-.PHONY : VW/fast
-
-#=============================================================================
-# Target rules for targets named Car
-
-# Build rule for target.
-Car: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Car
-.PHONY : Car
-
-# fast build rule for target.
-Car/fast:
-	$(MAKE) -f Car/CMakeFiles/Car.dir/build.make Car/CMakeFiles/Car.dir/build
-.PHONY : Car/fast
-
-#=============================================================================
-# Target rules for targets named BMW
-
-# Build rule for target.
-BMW: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BMW
 .PHONY : BMW
 
 # fast build rule for target.
 BMW/fast:
-	$(MAKE) -f BMW/CMakeFiles/BMW.dir/build.make BMW/CMakeFiles/BMW.dir/build
+	cd /home/ana/IEP_GIT/build && $(MAKE) -f BMW/CMakeFiles/BMW.dir/build.make BMW/CMakeFiles/BMW.dir/build
 .PHONY : BMW/fast
 
-main/main.o: main/main.cpp.o
+BMW.o: BMW.cpp.o
 
-.PHONY : main/main.o
+.PHONY : BMW.o
 
 # target to build an object file
-main/main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main/main.cpp.o
-.PHONY : main/main.cpp.o
+BMW.cpp.o:
+	cd /home/ana/IEP_GIT/build && $(MAKE) -f BMW/CMakeFiles/BMW.dir/build.make BMW/CMakeFiles/BMW.dir/BMW.cpp.o
+.PHONY : BMW.cpp.o
 
-main/main.i: main/main.cpp.i
+BMW.i: BMW.cpp.i
 
-.PHONY : main/main.i
+.PHONY : BMW.i
 
 # target to preprocess a source file
-main/main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main/main.cpp.i
-.PHONY : main/main.cpp.i
+BMW.cpp.i:
+	cd /home/ana/IEP_GIT/build && $(MAKE) -f BMW/CMakeFiles/BMW.dir/build.make BMW/CMakeFiles/BMW.dir/BMW.cpp.i
+.PHONY : BMW.cpp.i
 
-main/main.s: main/main.cpp.s
+BMW.s: BMW.cpp.s
 
-.PHONY : main/main.s
+.PHONY : BMW.s
 
 # target to generate assembly for a file
-main/main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main/main.cpp.s
-.PHONY : main/main.cpp.s
+BMW.cpp.s:
+	cd /home/ana/IEP_GIT/build && $(MAKE) -f BMW/CMakeFiles/BMW.dir/build.make BMW/CMakeFiles/BMW.dir/BMW.cpp.s
+.PHONY : BMW.cpp.s
 
 # Help Target
 help:
@@ -223,15 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... main"
-	@echo "... Hyundai"
-	@echo "... Ford"
-	@echo "... VW"
-	@echo "... Car"
 	@echo "... BMW"
-	@echo "... main/main.o"
-	@echo "... main/main.i"
-	@echo "... main/main.s"
+	@echo "... BMW.o"
+	@echo "... BMW.i"
+	@echo "... BMW.s"
 .PHONY : help
 
 
@@ -243,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ana/IEP_GIT/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -8,9 +8,6 @@ Car::Car(const Car& masina):
 code_(masina.code_), weight_(masina.weight_), hp_(masina.hp_)
 {}
 
-Car::Car(Car&& masina):
-code_(masina.code_), weight_(masina.weight_), hp_(masina.hp_)
-{}
 
 Car& Car::operator=(const Car& masina)
 {
@@ -24,19 +21,6 @@ Car& Car::operator=(const Car& masina)
     return *this;
 }
 
-Car& Car::operator=(Car&& masina)
-{
-    if(this!=&masina)
-    {   (Car&)(*this)=masina;
-        code_=masina.code_;
-        weight_=masina.weight_;
-        hp_=masina.hp_;
-        return *this;
-    }
-    return *this;
-   
-}
-  
    
 int Car::getCode(){ return code_;}
 float Car::getHP(){ return hp_;}

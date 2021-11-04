@@ -13,3 +13,6 @@
 /home/ana/IEP_GIT/build/Car/CMakeFiles/rebuild_cache.dir
 /home/ana/IEP_GIT/build/Car/CMakeFiles/edit_cache.dir
 /home/ana/IEP_GIT/build/Car/CMakeFiles/Car.dir
+/home/ana/IEP_GIT/build/BMW/CMakeFiles/rebuild_cache.dir
+/home/ana/IEP_GIT/build/BMW/CMakeFiles/edit_cache.dir
+/home/ana/IEP_GIT/build/BMW/CMakeFiles/BMW.dir
