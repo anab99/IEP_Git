@@ -6,7 +6,7 @@
 class BMW: public Car{
 
 public: 
-BMW() = delete;
+
 BMW(int code, int weight, float hp, int number_doors);
 virtual ~BMW();
 

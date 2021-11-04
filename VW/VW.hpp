@@ -6,7 +6,7 @@
 class VW: public Car{
 
 public: 
-VW() = delete;
+
 VW(int code, int weight, float hp, int number_doors);
 virtual ~VW();
 VW(const VW& masina);
