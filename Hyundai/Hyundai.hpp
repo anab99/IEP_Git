@@ -15,6 +15,7 @@ Hyundai& operator=(const Hyundai& masina);
 void afisare ();
 private:
 int number_colors_;
+public:
 int getCol();
 void setCol(const int w);
 

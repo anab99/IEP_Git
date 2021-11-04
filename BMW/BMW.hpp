@@ -15,6 +15,7 @@ private:
 BMW(const BMW& masina);
 BMW& operator=(const BMW& masina);
 int number_doors_;
+public:
 int getNR();
 void setNR(const int w);
 };

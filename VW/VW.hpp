@@ -14,6 +14,7 @@ VW& operator=(const VW& masina);
 void afisare ();
 private:
 int number_doors_;
+public:
 int getNR();
 void setNR(const int w);
 };

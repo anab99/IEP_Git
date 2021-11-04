@@ -14,7 +14,7 @@ Ford& operator=(const Ford& masina);
 void afisare ();
 private:
 int year_;
-
+public:
 
 int getYear();
 

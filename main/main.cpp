@@ -3,6 +3,7 @@
 #include "VW.hpp"
 #include "Hyundai.hpp"
 #include "string.h"
+#include "BMW.hpp"
 int main()
 {
   bool quit=false;
@@ -182,7 +183,21 @@ int main()
    }
   break;
 
-
+    case 10:{
+    std::cout<<"\nplease enter the car's code  ";
+    std::cin>>code;
+    std::cout<<"please enter the car's weight  ";
+    std::cin>>weight;
+    std::cout<<"please enter the car's horsepower  ";
+    std::cin>>hp;
+    std::cout<<"please enter the car's number of doors  ";
+    std::cin>>number_doors;
+    BMW* car1 = new BMW(code,weight,hp,number_doors);
+    BMW* car2 = new BMW(45,65,97, 89);
+    //BMW* car3= new BMW(*car1);
+    //*car2=*car1;
+   
+   }
 
 
 
