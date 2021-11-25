@@ -22,7 +22,7 @@ int main()
   int number_colors;
   while (1)
   { 
-    std::cout<<"1 - Ford 2 - VW 3 - Hyundai\n4 - Ford copy constructor 5 - VW copy constructor 6 - Hyundai copy constructor\n7 - Ford copy operator 8 - VW copy operator 9 - Hyundai copy operator\n10 - BMW (private) 11 - Ford (self assignment)\n12 - Ford (item10) 0 - Quit\nOptiunea ta:    ";
+    std::cout<<"1 - Ford 2 - VW 3 - Hyundai\n4 - Ford copy constructor 5 - VW copy constructor 6 - Hyundai copy constructor\n7 - Ford copy operator 8 - VW copy operator 9 - Hyundai copy operator\n10 - BMW (private)\n11 - Ford (self assignment)\n12 - Ford (item10) 13 - Ford (item12) 0 - Quit\nOptiunea ta:    ";
     std::cin>>nr;
 
     switch(nr)
@@ -259,7 +259,21 @@ int main()
    
     }
     break;
-
+    case 13:{
+    std::cout<<"\nplease enter the car's code  ";
+    std::cin>>code;
+    std::cout<<"please enter the car's weight  ";
+    std::cin>>weight;
+    std::cout<<"please enter the car's horsepower  ";
+    std::cin>>hp;
+    std::cout<<"please enter the car's year  ";
+    std::cin>>year;
+    ford = new Ford(code,weight,hp,year);
+    Ford* car1= new Ford(*ford);
+    ford->afisare();
+    car1->afisare();
+    }
+    break;
 
 
 
