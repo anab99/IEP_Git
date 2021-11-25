@@ -31,7 +31,7 @@ Ford& Ford::operator=(const Ford& masina){
   }
    else{
 
-      std::cout<<"self assessment"<<std::endl;
+      std::cout<<"self assignment"<<std::endl;
   }
   return *this;
 }

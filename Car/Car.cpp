@@ -20,7 +20,7 @@ Car& Car::operator=(const Car& masina)
     }
      else{
 
-      std::cout<<"self assessment"<<std::endl;
+      std::cout<<"self assignment"<<std::endl;
   }
     return *this;
 }

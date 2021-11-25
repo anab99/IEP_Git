@@ -24,12 +24,12 @@ Hyundai::Hyundai(const Hyundai &masina): Car(masina),number_colors_(masina.numbe
 
 Hyundai& Hyundai::operator=(const Hyundai& masina){
   if(this!=&masina){
-      (Car&)(*this)= masina;
+      Car::operator= (masina);
       number_colors_=masina.number_colors_;
   }
   else{
 
-      std::cout<<"self assessment"<<std::endl;
+      std::cout<<"self assignment"<<std::endl;
   }
   return *this;
 }
