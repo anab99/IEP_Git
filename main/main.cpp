@@ -8,6 +8,8 @@ int main()
 {
   bool quit=false;
   Car* car;
+  Car* m1;
+  Car*m2;
   Ford* ford;
   VW* vw;
   Hyundai* hyundai;
@@ -20,7 +22,7 @@ int main()
   int number_colors;
   while (1)
   { 
-    std::cout<<"1 - Ford 2 - VW 3 - Hyundai\n4 - Ford copy constructor 5 - VW copy constructor 6 - Hyundai copy constructor\n7 - Ford copy operator 8 - VW copy operator 9 - Hyundai copy operator\n10 - BMW (private) 11 - Ford (self assessment) 0 - Quit\nOptiunea ta:    ";
+    std::cout<<"1 - Ford 2 - VW 3 - Hyundai\n4 - Ford copy constructor 5 - VW copy constructor 6 - Hyundai copy constructor\n7 - Ford copy operator 8 - VW copy operator 9 - Hyundai copy operator\n10 - BMW (private) 11 - Ford (self assignment)\n12 - Ford (item10) 0 - Quit\nOptiunea ta:    ";
     std::cin>>nr;
 
     switch(nr)
@@ -35,7 +37,7 @@ int main()
     std::cin>>hp;
     std::cout<<"please enter the car's year  ";
     std::cin>>year;
-    
+     Ford car1(code,weight,hp,year);
 
     car = new Ford(code,weight,hp,year);
     
@@ -212,6 +214,48 @@ int main()
     Ford* car3 = &car1;
     *car2=*car3;
   
+   
+    }
+    break;
+    case 12:{
+    std::cout<<"please enter the car's code  ";
+    std::cin>>code;
+    std::cout<<"please enter the car's weight  ";
+    std::cin>>weight;
+    std::cout<<"please enter the car's horsepower  ";
+    std::cin>>hp;
+    std::cout<<"please enter the car's year  ";
+    std::cin>>year;
+    car = new Ford(code,weight,hp,year);
+    std::cout<<"please enter the car's code  ";
+    std::cin>>code;
+    std::cout<<"please enter the car's weight  ";
+    std::cin>>weight;
+    std::cout<<"please enter the car's horsepower  ";
+    std::cin>>hp;
+    std::cout<<"please enter the car's year  ";
+    std::cin>>year;
+    m1 = new Ford(code,weight,hp,year);
+    std::cout<<"please enter the car's code  ";
+    std::cin>>code;
+    std::cout<<"please enter the car's weight  ";
+    std::cin>>weight;
+    std::cout<<"please enter the car's horsepower  ";
+    std::cin>>hp;
+    std::cout<<"please enter the car's year  ";
+    std::cin>>year;
+    m2 = new Ford(code,weight,hp,year);
+    (car=m1)=m2;
+    std::cout<<"Cazul 1 ";
+    car->afisare();
+    m1->afisare();
+    m2->afisare();
+    car=m1=m2;
+    std::cout<<"Cazul 2";
+    car->afisare();
+    m1->afisare();
+    m2->afisare();
+    
    
     }
     break;
