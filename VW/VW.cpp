@@ -6,8 +6,7 @@ VW::VW(int code, int weight, float hp, int number_doors): Car(code,weight,hp),nu
 {}
 
 
-VW::~VW() { 
-    std::cout << "Destruct" << std::endl; }
+VW::~VW() { }
 
 
 void VW::afisare(){
@@ -25,8 +24,12 @@ VW::VW(const VW &masina): Car(masina),number_doors_(masina.number_doors_){
 
 VW& VW::operator=(const VW& masina){
   if(this!=&masina){
-      (Car&)(*this)= masina;
+     Car::operator= (masina);
       number_doors_=masina.number_doors_;
+  }
+   else{
+
+      std::cout<<"self assessment"<<std::endl;
   }
   return *this;
 }

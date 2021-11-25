@@ -7,8 +7,7 @@ Ford::Ford(int code, int weight, float hp, int year): Car(code,weight,hp),year_(
 }
 
 
-Ford::~Ford() { 
-    std::cout << "Destruct" << std::endl; }
+Ford::~Ford() { }
 
 
 void Ford::afisare(){
@@ -27,8 +26,12 @@ Ford::Ford(const Ford &masina): Car(masina),year_(masina.year_){
 
 Ford& Ford::operator=(const Ford& masina){
   if(this!=&masina){
-      (Car&)(*this)= masina;
+      Car::operator= (masina);
       year_=masina.year_;
+  }
+   else{
+
+      std::cout<<"self assessment"<<std::endl;
   }
   return *this;
 }

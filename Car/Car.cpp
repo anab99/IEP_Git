@@ -18,6 +18,10 @@ Car& Car::operator=(const Car& masina)
         hp_=masina.hp_;
         return *this;
     }
+     else{
+
+      std::cout<<"self assessment"<<std::endl;
+  }
     return *this;
 }
 

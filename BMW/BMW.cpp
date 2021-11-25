@@ -5,8 +5,7 @@ BMW::BMW(int code, int weight, float hp, int number_doors): Car(code,weight,hp),
 {}
 
 
-BMW::~BMW() { 
-    std::cout << "Destruct" << std::endl; }
+BMW::~BMW() { }
 
 
 void BMW::afisare(){
@@ -24,8 +23,12 @@ BMW::BMW(const BMW &masina): Car(masina),number_doors_(masina.number_doors_){
 
 BMW& BMW::operator=(const BMW& masina){
   if(this!=&masina){
-      (Car&)(*this)= masina;
+     Car::operator= (masina);
       number_doors_=masina.number_doors_;
+  }
+   else{
+
+      std::cout<<"self assessment"<<std::endl;
   }
   return *this;
 }

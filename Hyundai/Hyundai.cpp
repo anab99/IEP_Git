@@ -6,8 +6,7 @@ Hyundai::Hyundai(int code, int weight, float hp, int number_colors): Car(code,we
 {}
 
 
-Hyundai::~Hyundai() { 
-    std::cout << "Destruct" << std::endl; }
+Hyundai::~Hyundai() { }
 
 
 void Hyundai::afisare(){
@@ -27,6 +26,10 @@ Hyundai& Hyundai::operator=(const Hyundai& masina){
   if(this!=&masina){
       (Car&)(*this)= masina;
       number_colors_=masina.number_colors_;
+  }
+  else{
+
+      std::cout<<"self assessment"<<std::endl;
   }
   return *this;
 }
