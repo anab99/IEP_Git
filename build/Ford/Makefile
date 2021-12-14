@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ana/IEP_GIT
+CMAKE_SOURCE_DIR = /home/maria/IEP_GIT/IEP_Git
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ana/IEP_GIT/build
+CMAKE_BINARY_DIR = /home/maria/IEP_GIT/IEP_Git/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ana/IEP_GIT/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ana/IEP_GIT/build/CMakeFiles /home/ana/IEP_GIT/build/Ford/CMakeFiles/progress.marks
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 Ford/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/IEP_GIT/build/CMakeFiles 0
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/maria/IEP_GIT/IEP_Git/build/CMakeFiles /home/maria/IEP_GIT/IEP_Git/build/Ford/CMakeFiles/progress.marks
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f CMakeFiles/Makefile2 Ford/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maria/IEP_GIT/IEP_Git/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 Ford/clean
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f CMakeFiles/Makefile2 Ford/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 Ford/preinstall
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f CMakeFiles/Makefile2 Ford/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 Ford/preinstall
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f CMakeFiles/Makefile2 Ford/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ana/IEP_GIT/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Ford/CMakeFiles/Ford.dir/rule:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 Ford/CMakeFiles/Ford.dir/rule
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f CMakeFiles/Makefile2 Ford/CMakeFiles/Ford.dir/rule
 .PHONY : Ford/CMakeFiles/Ford.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ Ford: Ford/CMakeFiles/Ford.dir/rule
 
 # fast build rule for target.
 Ford/fast:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f Ford/CMakeFiles/Ford.dir/build.make Ford/CMakeFiles/Ford.dir/build
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f Ford/CMakeFiles/Ford.dir/build.make Ford/CMakeFiles/Ford.dir/build
 .PHONY : Ford/fast
 
 Ford.o: Ford.cpp.o
@@ -131,7 +131,7 @@ Ford.o: Ford.cpp.o
 
 # target to build an object file
 Ford.cpp.o:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f Ford/CMakeFiles/Ford.dir/build.make Ford/CMakeFiles/Ford.dir/Ford.cpp.o
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f Ford/CMakeFiles/Ford.dir/build.make Ford/CMakeFiles/Ford.dir/Ford.cpp.o
 .PHONY : Ford.cpp.o
 
 Ford.i: Ford.cpp.i
@@ -140,7 +140,7 @@ Ford.i: Ford.cpp.i
 
 # target to preprocess a source file
 Ford.cpp.i:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f Ford/CMakeFiles/Ford.dir/build.make Ford/CMakeFiles/Ford.dir/Ford.cpp.i
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f Ford/CMakeFiles/Ford.dir/build.make Ford/CMakeFiles/Ford.dir/Ford.cpp.i
 .PHONY : Ford.cpp.i
 
 Ford.s: Ford.cpp.s
@@ -149,7 +149,7 @@ Ford.s: Ford.cpp.s
 
 # target to generate assembly for a file
 Ford.cpp.s:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f Ford/CMakeFiles/Ford.dir/build.make Ford/CMakeFiles/Ford.dir/Ford.cpp.s
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f Ford/CMakeFiles/Ford.dir/build.make Ford/CMakeFiles/Ford.dir/Ford.cpp.s
 .PHONY : Ford.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ana/IEP_GIT/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -6,19 +6,15 @@
 
 #IncludeRegexTransform: 
 
-../Car/Car.hpp
+/home/maria/IEP_GIT/IEP_Git/Lock/Lock.cpp
+Lock.hpp
+/home/maria/IEP_GIT/IEP_Git/Lock/Lock.hpp
+
+/home/maria/IEP_GIT/IEP_Git/Lock/Lock.hpp
 iostream
 -
-
-/home/ana/IEP_GIT/VW/VW.cpp
-VW.hpp
-/home/ana/IEP_GIT/VW/VW.hpp
-
-/home/ana/IEP_GIT/VW/VW.hpp
-iostream
+mutex
 -
-cstring
+memory
 -
-Car.hpp
-/home/ana/IEP_GIT/VW/Car.hpp
 

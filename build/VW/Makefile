@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ana/IEP_GIT
+CMAKE_SOURCE_DIR = /home/maria/IEP_GIT/IEP_Git
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ana/IEP_GIT/build
+CMAKE_BINARY_DIR = /home/maria/IEP_GIT/IEP_Git/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ana/IEP_GIT/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ana/IEP_GIT/build/CMakeFiles /home/ana/IEP_GIT/build/VW/CMakeFiles/progress.marks
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 VW/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/IEP_GIT/build/CMakeFiles 0
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/maria/IEP_GIT/IEP_Git/build/CMakeFiles /home/maria/IEP_GIT/IEP_Git/build/VW/CMakeFiles/progress.marks
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f CMakeFiles/Makefile2 VW/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maria/IEP_GIT/IEP_Git/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 VW/clean
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f CMakeFiles/Makefile2 VW/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 VW/preinstall
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f CMakeFiles/Makefile2 VW/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 VW/preinstall
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f CMakeFiles/Makefile2 VW/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ana/IEP_GIT/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 VW/CMakeFiles/VW.dir/rule:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 VW/CMakeFiles/VW.dir/rule
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f CMakeFiles/Makefile2 VW/CMakeFiles/VW.dir/rule
 .PHONY : VW/CMakeFiles/VW.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ VW: VW/CMakeFiles/VW.dir/rule
 
 # fast build rule for target.
 VW/fast:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f VW/CMakeFiles/VW.dir/build.make VW/CMakeFiles/VW.dir/build
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f VW/CMakeFiles/VW.dir/build.make VW/CMakeFiles/VW.dir/build
 .PHONY : VW/fast
 
 VW.o: VW.cpp.o
@@ -131,7 +131,7 @@ VW.o: VW.cpp.o
 
 # target to build an object file
 VW.cpp.o:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f VW/CMakeFiles/VW.dir/build.make VW/CMakeFiles/VW.dir/VW.cpp.o
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f VW/CMakeFiles/VW.dir/build.make VW/CMakeFiles/VW.dir/VW.cpp.o
 .PHONY : VW.cpp.o
 
 VW.i: VW.cpp.i
@@ -140,7 +140,7 @@ VW.i: VW.cpp.i
 
 # target to preprocess a source file
 VW.cpp.i:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f VW/CMakeFiles/VW.dir/build.make VW/CMakeFiles/VW.dir/VW.cpp.i
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f VW/CMakeFiles/VW.dir/build.make VW/CMakeFiles/VW.dir/VW.cpp.i
 .PHONY : VW.cpp.i
 
 VW.s: VW.cpp.s
@@ -149,7 +149,7 @@ VW.s: VW.cpp.s
 
 # target to generate assembly for a file
 VW.cpp.s:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f VW/CMakeFiles/VW.dir/build.make VW/CMakeFiles/VW.dir/VW.cpp.s
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f VW/CMakeFiles/VW.dir/build.make VW/CMakeFiles/VW.dir/VW.cpp.s
 .PHONY : VW.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ana/IEP_GIT/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

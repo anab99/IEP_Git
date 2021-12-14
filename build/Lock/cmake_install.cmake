@@ -1,4 +1,4 @@
-# Install script for directory: /home/maria/IEP_GIT/IEP_Git/VW
+# Install script for directory: /home/maria/IEP_GIT/IEP_Git/Lock
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

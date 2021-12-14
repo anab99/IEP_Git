@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ana/IEP_GIT
+CMAKE_SOURCE_DIR = /home/maria/IEP_GIT/IEP_Git
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ana/IEP_GIT/build
+CMAKE_BINARY_DIR = /home/maria/IEP_GIT/IEP_Git/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ana/IEP_GIT/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ana/IEP_GIT/build/CMakeFiles /home/ana/IEP_GIT/build/BMW/CMakeFiles/progress.marks
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 BMW/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ana/IEP_GIT/build/CMakeFiles 0
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/maria/IEP_GIT/IEP_Git/build/CMakeFiles /home/maria/IEP_GIT/IEP_Git/build/BMW/CMakeFiles/progress.marks
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f CMakeFiles/Makefile2 BMW/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maria/IEP_GIT/IEP_Git/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 BMW/clean
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f CMakeFiles/Makefile2 BMW/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 BMW/preinstall
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f CMakeFiles/Makefile2 BMW/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 BMW/preinstall
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f CMakeFiles/Makefile2 BMW/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ana/IEP_GIT/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 BMW/CMakeFiles/BMW.dir/rule:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f CMakeFiles/Makefile2 BMW/CMakeFiles/BMW.dir/rule
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f CMakeFiles/Makefile2 BMW/CMakeFiles/BMW.dir/rule
 .PHONY : BMW/CMakeFiles/BMW.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ BMW: BMW/CMakeFiles/BMW.dir/rule
 
 # fast build rule for target.
 BMW/fast:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f BMW/CMakeFiles/BMW.dir/build.make BMW/CMakeFiles/BMW.dir/build
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f BMW/CMakeFiles/BMW.dir/build.make BMW/CMakeFiles/BMW.dir/build
 .PHONY : BMW/fast
 
 BMW.o: BMW.cpp.o
@@ -131,7 +131,7 @@ BMW.o: BMW.cpp.o
 
 # target to build an object file
 BMW.cpp.o:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f BMW/CMakeFiles/BMW.dir/build.make BMW/CMakeFiles/BMW.dir/BMW.cpp.o
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f BMW/CMakeFiles/BMW.dir/build.make BMW/CMakeFiles/BMW.dir/BMW.cpp.o
 .PHONY : BMW.cpp.o
 
 BMW.i: BMW.cpp.i
@@ -140,7 +140,7 @@ BMW.i: BMW.cpp.i
 
 # target to preprocess a source file
 BMW.cpp.i:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f BMW/CMakeFiles/BMW.dir/build.make BMW/CMakeFiles/BMW.dir/BMW.cpp.i
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f BMW/CMakeFiles/BMW.dir/build.make BMW/CMakeFiles/BMW.dir/BMW.cpp.i
 .PHONY : BMW.cpp.i
 
 BMW.s: BMW.cpp.s
@@ -149,7 +149,7 @@ BMW.s: BMW.cpp.s
 
 # target to generate assembly for a file
 BMW.cpp.s:
-	cd /home/ana/IEP_GIT/build && $(MAKE) -f BMW/CMakeFiles/BMW.dir/build.make BMW/CMakeFiles/BMW.dir/BMW.cpp.s
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(MAKE) -f BMW/CMakeFiles/BMW.dir/build.make BMW/CMakeFiles/BMW.dir/BMW.cpp.s
 .PHONY : BMW.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ana/IEP_GIT/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/maria/IEP_GIT/IEP_Git/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

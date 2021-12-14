@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/maria/IEP_GIT/IEP_Git/BMW -I/home/maria/IEP_GIT/IEP_Git/Car 
+CXX_INCLUDES = -I/home/maria/IEP_GIT/IEP_Git/Lock 
 

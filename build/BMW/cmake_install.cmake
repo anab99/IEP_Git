@@ -1,4 +1,4 @@
-# Install script for directory: /home/ana/IEP_GIT/BMW
+# Install script for directory: /home/maria/IEP_GIT/IEP_Git/BMW
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
