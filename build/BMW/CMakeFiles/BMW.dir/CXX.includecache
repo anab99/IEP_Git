@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Car/Car.hpp
+iostream
+-
+Showroom.hpp
+../Car/Showroom.hpp
+
+../Showroom/Showroom.hpp
+iostream
+-
+cstring
+-
+
+/home/maria/IEP_GIT/IEP_Git/BMW/BMW.cpp
+BMW.hpp
+/home/maria/IEP_GIT/IEP_Git/BMW/BMW.hpp
+memory
+-
+
+/home/maria/IEP_GIT/IEP_Git/BMW/BMW.hpp
+iostream
+-
+cstring
+-
+Car.hpp
+/home/maria/IEP_GIT/IEP_Git/BMW/Car.hpp
+

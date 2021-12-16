@@ -20,13 +20,14 @@ Showroom& Showroom::operator=(const Showroom& obj){
     continut=obj.continut;
   }
   else{
-    std::cout<<"\nSelf assignment\n"; }
+  std::cout<<"\nSelf assignment\n"; }
+
   return *this; 
   
 }
 
 void Showroom::show(){
-    std::cout<<"\nContinutul este : "<<continut<<"\n";
+    std::cout<<"\nThis showroom contains "<<continut<<" cars\n";
 }
 void Showroom::set(const std::string w){ continut=w;}
 std::string Showroom::get(){ return continut;}

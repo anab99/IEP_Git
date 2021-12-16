@@ -85,7 +85,12 @@ main: Hyundai/libHyundai.a
 main: VW/libVW.a
 main: BMW/libBMW.a
 main: Lock/libLock.a
+main: Showroom/libShowroom.a
+main: Owner/libOwner.a
 main: Car/libCar.a
+main: Showroom/libShowroom.a
+main: Car/libCar.a
+main: Showroom/libShowroom.a
 main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maria/IEP_GIT/IEP_Git/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)

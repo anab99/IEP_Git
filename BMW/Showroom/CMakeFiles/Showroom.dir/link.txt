@@ -1,0 +1,2 @@
+/usr/bin/ar qc libShowroom.a  CMakeFiles/Showroom.dir/Showroom.cpp.o
+/usr/bin/ranlib libShowroom.a

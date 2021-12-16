@@ -10,7 +10,7 @@ class Showroom{
     Showroom& operator=(const Showroom&); 
 
   
-    void afisare();
+    void show();
     void set(const std::string cuv);
     std::string get();
     private:

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libHyundai.a  CMakeFiles/Hyundai.dir/Hyundai.cpp.o
+/usr/bin/ranlib libHyundai.a

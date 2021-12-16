@@ -1,0 +1,2 @@
+/usr/bin/ar qc libBMW.a  CMakeFiles/BMW.dir/BMW.cpp.o
+/usr/bin/ranlib libBMW.a

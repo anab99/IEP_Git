@@ -11,6 +11,7 @@ BMW(int code, int weight, float hp, int number_doors);
 virtual ~BMW();
 
 void afisare ();
+void adaugareShowroom(Showroom* sh);
 private:
 BMW(const BMW& masina);
 BMW& operator=(const BMW& masina);

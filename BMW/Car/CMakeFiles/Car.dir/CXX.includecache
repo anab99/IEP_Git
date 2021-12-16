@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Showroom/Showroom.hpp
+iostream
+-
+cstring
+-
+
+/home/maria/IEP_GIT/IEP_Git/Car/Car.cpp
+Car.hpp
+/home/maria/IEP_GIT/IEP_Git/Car/Car.hpp
+
+/home/maria/IEP_GIT/IEP_Git/Car/Car.hpp
+iostream
+-
+Showroom.hpp
+/home/maria/IEP_GIT/IEP_Git/Car/Showroom.hpp
+

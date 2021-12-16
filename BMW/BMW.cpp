@@ -1,5 +1,5 @@
 #include "BMW.hpp"
-
+#include <memory>
 
 BMW::BMW(int code, int weight, float hp, int number_doors): Car(code,weight,hp),number_doors_(number_doors)
 {}
@@ -32,6 +32,25 @@ BMW& BMW::operator=(const BMW& masina){
   }
   return *this;
 }
+int ok=0;
+void BMW::adaugareShowroom(Showroom* sh){
+    
+    if (ok==0)
+    {
+    std::string str =sh->get();
+    str="BMW";
+    sh->set(str); 
+    }
+    else
+    {
+    std::string str =sh->get();
+    str=str + "," + "BMW";
+    sh->set(str); 
+    } 
+    ok=1;
+
+    }
+
 int BMW::getNR()
 {
     return number_doors_;}

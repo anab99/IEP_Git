@@ -1,0 +1,2 @@
+/usr/bin/ar qc libVW.a  CMakeFiles/VW.dir/VW.cpp.o
+/usr/bin/ranlib libVW.a

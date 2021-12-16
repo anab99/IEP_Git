@@ -19,3 +19,9 @@
 /home/maria/IEP_GIT/IEP_Git/build/Lock/CMakeFiles/rebuild_cache.dir
 /home/maria/IEP_GIT/IEP_Git/build/Lock/CMakeFiles/edit_cache.dir
 /home/maria/IEP_GIT/IEP_Git/build/Lock/CMakeFiles/Lock.dir
+/home/maria/IEP_GIT/IEP_Git/build/Showroom/CMakeFiles/rebuild_cache.dir
+/home/maria/IEP_GIT/IEP_Git/build/Showroom/CMakeFiles/edit_cache.dir
+/home/maria/IEP_GIT/IEP_Git/build/Showroom/CMakeFiles/Showroom.dir
+/home/maria/IEP_GIT/IEP_Git/build/Owner/CMakeFiles/rebuild_cache.dir
+/home/maria/IEP_GIT/IEP_Git/build/Owner/CMakeFiles/edit_cache.dir
+/home/maria/IEP_GIT/IEP_Git/build/Owner/CMakeFiles/Owner.dir

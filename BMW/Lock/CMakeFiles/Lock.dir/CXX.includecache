@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maria/IEP_GIT/IEP_Git/Lock/Lock.cpp
+Lock.hpp
+/home/maria/IEP_GIT/IEP_Git/Lock/Lock.hpp
+
+/home/maria/IEP_GIT/IEP_Git/Lock/Lock.hpp
+iostream
+-
+mutex
+-
+memory
+-
+

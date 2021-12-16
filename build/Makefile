@@ -201,6 +201,32 @@ Lock/fast:
 	$(MAKE) -f Lock/CMakeFiles/Lock.dir/build.make Lock/CMakeFiles/Lock.dir/build
 .PHONY : Lock/fast
 
+#=============================================================================
+# Target rules for targets named Showroom
+
+# Build rule for target.
+Showroom: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Showroom
+.PHONY : Showroom
+
+# fast build rule for target.
+Showroom/fast:
+	$(MAKE) -f Showroom/CMakeFiles/Showroom.dir/build.make Showroom/CMakeFiles/Showroom.dir/build
+.PHONY : Showroom/fast
+
+#=============================================================================
+# Target rules for targets named Owner
+
+# Build rule for target.
+Owner: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Owner
+.PHONY : Owner
+
+# fast build rule for target.
+Owner/fast:
+	$(MAKE) -f Owner/CMakeFiles/Owner.dir/build.make Owner/CMakeFiles/Owner.dir/build
+.PHONY : Owner/fast
+
 main/main.o: main/main.cpp.o
 
 .PHONY : main/main.o
@@ -243,6 +269,8 @@ help:
 	@echo "... Car"
 	@echo "... BMW"
 	@echo "... Lock"
+	@echo "... Showroom"
+	@echo "... Owner"
 	@echo "... main/main.o"
 	@echo "... main/main.i"
 	@echo "... main/main.s"

@@ -1,16 +1,27 @@
 #include "Lock.hpp"
+#include<mutex>
 
-Lock::Lock(mutex *pm)
-{
-    pm->lock();
-    pMutex.reset(pm, unlock);
+std::mutex m;
+int ct;
 
-    cout << "Lock" << endl;
+Lock::Lock(){
+    m.lock();
+    std::cout<<"Constructor is called"<<std::endl;
 }
 
-void unlock(mutex *pm)
-{
-    pm->unlock();
+Lock::~Lock(){
+    m.unlock();
+    std::cout<<"Destructor is called"<<std::endl;
+}
 
-    cout << "Unlock" << endl;
+
+void testdriving(){
+    Lock lock;
+    ct++;
+    std::cout<<"Owner no "<<ct<< "is test driving\n";
+}
+
+void done(){
+    Lock lock;
+    std::cout<<"The current owner is done"<<std::endl;
 }

@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/main.dir/main/main.cpp.o  -o main  Car/libCar.a Ford/libFord.a Hyundai/libHyundai.a VW/libVW.a BMW/libBMW.a Lock/libLock.a Car/libCar.a 
+/usr/bin/c++   -pthread   CMakeFiles/main.dir/main/main.cpp.o  -o main  Car/libCar.a Ford/libFord.a Hyundai/libHyundai.a VW/libVW.a BMW/libBMW.a Lock/libLock.a Showroom/libShowroom.a Owner/libOwner.a Car/libCar.a Showroom/libShowroom.a Car/libCar.a Showroom/libShowroom.a 

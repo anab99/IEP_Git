@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Car/Car.hpp
+iostream
+-
+Showroom.hpp
+../Car/Showroom.hpp
+
+../Showroom/Showroom.hpp
+iostream
+-
+cstring
+-
+
+/home/maria/IEP_GIT/IEP_Git/Owner/Owner.cpp
+Owner.hpp
+/home/maria/IEP_GIT/IEP_Git/Owner/Owner.hpp
+mutex
+-
+memory
+-
+
+/home/maria/IEP_GIT/IEP_Git/Owner/Owner.hpp
+iostream
+-
+string
+-
+Car.hpp
+/home/maria/IEP_GIT/IEP_Git/Owner/Car.hpp
+

@@ -11,11 +11,13 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Car"
+  "../Showroom"
   "../Ford"
   "../Hyundai"
   "../VW"
   "../BMW"
   "../Lock"
+  "../Owner"
   )
 
 # Targets to which this target links.
@@ -26,6 +28,8 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/maria/IEP_GIT/IEP_Git/build/VW/CMakeFiles/VW.dir/DependInfo.cmake"
   "/home/maria/IEP_GIT/IEP_Git/build/BMW/CMakeFiles/BMW.dir/DependInfo.cmake"
   "/home/maria/IEP_GIT/IEP_Git/build/Lock/CMakeFiles/Lock.dir/DependInfo.cmake"
+  "/home/maria/IEP_GIT/IEP_Git/build/Showroom/CMakeFiles/Showroom.dir/DependInfo.cmake"
+  "/home/maria/IEP_GIT/IEP_Git/build/Owner/CMakeFiles/Owner.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

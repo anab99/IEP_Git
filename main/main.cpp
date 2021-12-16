@@ -4,6 +4,10 @@
 #include "Hyundai.hpp"
 #include "string.h"
 #include "BMW.hpp"
+#include "Lock.hpp"
+#include "Owner.hpp"
+#include<mutex>
+#include <thread>
 int main()
 {
   bool quit=false;
@@ -274,13 +278,71 @@ int main()
     car1->afisare();
     }
     break;
+    case 14:{
+    std::cout<<"\nplease enter the car's code  ";
+    std::cin>>code;
+    std::cout<<"please enter the car's weight  ";
+    std::cin>>weight;
+    std::cout<<"please enter the car's horsepower  ";
+    std::cin>>hp;
+    std::cout<<"please enter the car's number of doors  ";
+    std::cin>>number_doors;
+    BMW* car1 = new BMW(code,weight,hp,number_doors);
+    BMW* car2 = new BMW(45,65,97, 89);
+    std::shared_ptr<Showroom> sh = std::make_shared<Showroom>("");
+    
+    car1->adaugareShowroom(sh.get());
+    sh->show();
+    std::shared_ptr<Showroom> sh1(sh);
+    car2->adaugareShowroom(sh1.get());
+    sh->show();
+    break;
+
+
+    }
+    case 15:{
+    std::thread thread_a(testdriving);
+    std::thread thread_a_done(done);
+    std::thread thread_b(testdriving);
+    std::thread thread_b_done(done);
+
+    thread_a.join();
+    thread_a_done.join();
+    thread_b.join();
+    thread_b_done.join();
+   
+    break;
+    }
+
+    case 16:{
+    std::cout<<"\nplease enter the car's code  ";
+    std::cin>>code;
+    std::cout<<"please enter the car's weight  ";
+    std::cin>>weight;
+    std::cout<<"please enter the car's horsepower  ";
+    std::cin>>hp;
+    std::cout<<"please enter the car's number of doors  ";
+    std::cin>>number_doors;
+    BMW* car1 = new BMW(code,weight,hp,number_doors);
+    BMW* car2 = new BMW(45,65,97, 89);
+    Owner* ow1= new Owner("Ana");
+    Owner* ow2= new Owner("Denisa");
+    ow1->cumpara(car1);
+    std::cout<<"\n";
+    ow1->vandute(car1,ow2);
+    std::cout<<"\n";
+    
 
 
 
+    break;      
+    }
     default: quit=true;
     break;
 
     }
+
+    
     if (quit)
     break;
     std::cout<<std::endl;

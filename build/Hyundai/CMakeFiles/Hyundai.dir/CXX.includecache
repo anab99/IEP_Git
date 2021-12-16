@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Car/Car.hpp
+iostream
+-
+Showroom.hpp
+../Car/Showroom.hpp
+
+../Showroom/Showroom.hpp
+iostream
+-
+cstring
+-
+
+/home/maria/IEP_GIT/IEP_Git/Hyundai/Hyundai.cpp
+Hyundai.hpp
+/home/maria/IEP_GIT/IEP_Git/Hyundai/Hyundai.hpp
+
+/home/maria/IEP_GIT/IEP_Git/Hyundai/Hyundai.hpp
+iostream
+-
+cstring
+-
+Car.hpp
+/home/maria/IEP_GIT/IEP_Git/Hyundai/Car.hpp
+
