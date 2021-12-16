@@ -35,19 +35,10 @@ BMW& BMW::operator=(const BMW& masina){
 int ok=0;
 void BMW::adaugareShowroom(Showroom* sh){
     
-    if (ok==0)
-    {
+    auto s = std::to_string(this->getNR());
     std::string str =sh->get();
-    str="BMW";
+    str=str + "," + s;
     sh->set(str); 
-    }
-    else
-    {
-    std::string str =sh->get();
-    str=str + "," + "BMW";
-    sh->set(str); 
-    } 
-    ok=1;
 
     }
 

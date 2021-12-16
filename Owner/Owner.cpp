@@ -45,6 +45,6 @@ void Owner::vandute(Car* m1, Owner* owner){
     std::unique_ptr<Car> cars(m1);
     std::cout<<this->name<< " a cumparat masina cu codul "<<m1->getCode()<<std::endl;
     std::unique_ptr<Car> m2 = std::move(cars);
-    std::cout<<this->name<< " a fost cumparata de "<<owner->getName()<<std::endl;
+    std::cout<<this->name<< " i-a vandut masina lui "<<owner->getName()<<std::endl;
     std::cout<<owner->getName()<<" a cumparat masina cu codul "<<m2.get()->getCode()<<std::endl;
 }

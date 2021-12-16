@@ -26,7 +26,7 @@ int main()
   int number_colors;
   while (1)
   { 
-    std::cout<<"1 - Ford 2 - VW 3 - Hyundai\n4 - Ford copy constructor 5 - VW copy constructor 6 - Hyundai copy constructor\n7 - Ford copy operator 8 - VW copy operator 9 - Hyundai copy operator\n10 - BMW (private)\n11 - Ford (self assignment)\n12 - Ford (item10) 13 - Ford (item12) 0 - Quit\nOptiunea ta:    ";
+    std::cout<<"1 - Ford 2 - VW 3 - Hyundai\n4 - Ford copy constructor 5 - VW copy constructor 6 - Hyundai copy constructor\n7 - Ford copy operator 8 - VW copy operator 9 - Hyundai copy operator\n10 - BMW (private)\n11 - Ford (self assignment)\n12 - Ford (item10) 13 - Ford (item12) 0 - Quit\n14 - Item13a 15 - Item14 16 - Item13b\nOptiunea ta:    ";
     std::cin>>nr;
 
     switch(nr)
@@ -289,8 +289,8 @@ int main()
     std::cin>>number_doors;
     BMW* car1 = new BMW(code,weight,hp,number_doors);
     BMW* car2 = new BMW(45,65,97, 89);
-    std::shared_ptr<Showroom> sh = std::make_shared<Showroom>("");
-    
+    std::shared_ptr<Showroom> sh = std::make_shared<Showroom>("7");
+    printf(" se va afisa number of doors pentru fiecare masina");
     car1->adaugareShowroom(sh.get());
     sh->show();
     std::shared_ptr<Showroom> sh1(sh);
@@ -329,7 +329,7 @@ int main()
     Owner* ow2= new Owner("Denisa");
     ow1->cumpara(car1);
     std::cout<<"\n";
-    ow1->vandute(car1,ow2);
+    ow1->vandute(car2,ow2);
     std::cout<<"\n";
     
 
