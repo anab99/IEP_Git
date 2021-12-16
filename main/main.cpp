@@ -8,6 +8,21 @@
 #include "Owner.hpp"
 #include<mutex>
 #include <thread>
+
+std::mutex m;
+int ct=0;
+void testdriving(){
+    m.lock();
+    ct++;
+    std::cout<<"Owner no "<<ct<< "is test driving\n";
+    m.unlock();
+}
+
+void done(){
+    m.lock();
+    std::cout<<"The current owner is done"<<std::endl;
+    m.unlock();
+}
 int main()
 {
   bool quit=false;
@@ -288,7 +303,7 @@ int main()
     std::cout<<"please enter the car's number of doors  ";
     std::cin>>number_doors;
     BMW* car1 = new BMW(code,weight,hp,number_doors);
-    BMW* car2 = new BMW(45,65,97, 89);
+    BMW* car2 = new BMW(45,65,97, 4);
     std::shared_ptr<Showroom> sh = std::make_shared<Showroom>("7");
     printf(" se va afisa number of doors pentru fiecare masina");
     car1->adaugareShowroom(sh.get());
@@ -324,7 +339,7 @@ int main()
     std::cout<<"please enter the car's number of doors  ";
     std::cin>>number_doors;
     BMW* car1 = new BMW(code,weight,hp,number_doors);
-    BMW* car2 = new BMW(45,65,97, 89);
+    BMW* car2 = new BMW(45,65,97, 4);
     Owner* ow1= new Owner("Ana");
     Owner* ow2= new Owner("Denisa");
     ow1->cumpara(car1);

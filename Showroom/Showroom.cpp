@@ -27,7 +27,7 @@ Showroom& Showroom::operator=(const Showroom& obj){
 }
 
 void Showroom::show(){
-    std::cout<<"\nThis showroom contains "<<continut<<" cars\n";
+    std::cout<<"\nThis showroom contains cars with "<<continut<<" number of doors\n";
 }
 void Showroom::set(const std::string w){ continut=w;}
 std::string Showroom::get(){ return continut;}
